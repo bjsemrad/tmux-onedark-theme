@@ -7,6 +7,8 @@ onedark_white="#aab2bf"
 onedark_green="#98c379"
 onedark_visual_grey="#3e4452"
 onedark_comment_grey="#5c6370"
+onedark_purple="#c678dd"
+
 
 get() {
    local option=$1
@@ -81,7 +83,7 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%m/%d/%Y")
 
-set "status-right" "#[fg=$onedark_visual_grey,bg=$onedark_visual_grey]#[fg=$onedark_white, bg=$onedark_visual_grey]#ip #[fg=$onedark_blue,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_blue,bold] #h #[fg=$onedark_yellow, bg=$onedark_blue]#[fg=$onedark_yellow,bg=$onedark_yellow]#[fg=$onedark_black,bg=$onedark_yellow,bold]#S "
+set "status-right" "#[fg=$onedark_purple,bg=$onedark_purple]#[fg=$onedark_white, bg=$onedark_purple]#{exec:ip route get 1.2.3.4 | cut -d " " -f 7}#[fg=$onedark_blue,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_blue,bold] #h #[fg=$onedark_yellow, bg=$onedark_blue]#[fg=$onedark_yellow,bg=$onedark_yellow]#[fg=$onedark_black,bg=$onedark_yellow,bold]#S "
 
 set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #{?client_prefix,TMUX,NORMAL}#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
