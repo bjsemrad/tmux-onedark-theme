@@ -65,11 +65,11 @@ set "window-active-style" "fg=$onedark_white"
 
 set "pane-border-fg" "$onedark_white"
 set "pane-border-bg" "$onedark_black"
-set "pane-active-border-fg" "$onedark_green"
+set "pane-active-border-fg" "$onedark_blue"
 set "pane-active-border-bg" "$onedark_black"
 
-set "display-panes-active-colour" "$onedark_yellow"
-set "display-panes-colour" "$onedark_blue"
+set "display-panes-active-colour" "$onedark_blue"
+set "display-panes-colour" "$onedark_yellow"
 
 set "status-bg" "$onedark_black"
 set "status-fg" "$onedark_white"
@@ -83,7 +83,7 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%m/%d/%Y")
 
-set "status-right" "#[fg=$onedark_yellow,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_yellow,bold] #S #[fg=$onedark_purple, bg=$onedark_yellow]#[fg=$onedark_purple,bg=$onedark_purple]#[fg=$onedark_black,bg=$onedark_purple,bold]#h "
+set "status-right" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #S #[fg=$onedark_purple, bg=$onedark_green]#[fg=$onedark_purple,bg=$onedark_purple]#[fg=$onedark_black,bg=$onedark_purple,bold]#h "
 
 set "status-left" "#[fg=$onedark_black,bg=$onedark_purple,bold] #{?client_prefix,M ,N }#[fg=$onedark_purple,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
