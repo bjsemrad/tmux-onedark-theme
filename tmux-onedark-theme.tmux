@@ -83,9 +83,9 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%m/%d/%Y")
 
-set "status-right" "#[fg=$onedark_purple,bg=$onedark_purple]#[fg=$onedark_black, bg=$onedark_purple]IP#[fg=$onedark_blue,bg=$onedark_purple,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_blue,bold] #h #[fg=$onedark_yellow, bg=$onedark_blue]#[fg=$onedark_yellow,bg=$onedark_yellow]#[fg=$onedark_black,bg=$onedark_yellow,bold]#S "
+set "status-right" "#[fg=$onedark_black,bg=$onedark_purple] | #[fg=$onedark_black, bg=$onedark_purple]I P |#[fg=$onedark_blue,bg=$onedark_purple,nobold,nounderscore,noitalics]|#[fg=$onedark_black,bg=$onedark_blue,bold] #h #[fg=$onedark_black,bg=$onedark_yellow]|#[fg=$onedark_black,bg=$onedark_yellow,bold]#S "
 
-set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #{?client_prefix,#[fg=$onedark_black\;bg=$onedark_blue] M #[fg=$onedark_blue\;bg=$onedark_black],#[fg=$onedark_black\;bg=$onedark_green] N #[fg=$onedark_green\;bg=$onedark_black]}"
+set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #{?client_prefix,#[bg=$onedark_blue] M #[default], N }"
 
-set "window-status-format" "#[fg=$onedark_black,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_black] #I  #W #[fg=$onedark_black,bg=$onedark_black,nobold,nounderscore,noitalics]"
-set "window-status-current-format" "#[fg=$onedark_black,bg=$onedark_visual_grey,nobold,nounderscore,noitalics]#[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I  #W #[fg=$onedark_visual_grey,bg=$onedark_black,nobold,nounderscore,noitalics]"
+set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I | #W "
+set "window-status-current-format" "[ #[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I | #W ]"
