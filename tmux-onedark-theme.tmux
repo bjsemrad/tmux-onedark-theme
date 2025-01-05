@@ -83,7 +83,7 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%m/%d/%Y")
 
-set "status-right" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #S #[fg=$onedark_black, bg=$onedark_green]#[fg=$onedark_purple,bg=$onedark_black]#[fg=$onedark_black,bg=$onedark_purple,bold]#h "
+set "status-right" "#[fg=$onedark_green,bg=$onedark_black,nobold,nounderscore,noitalics]#[fg=$onedark_black,bg=$onedark_green,bold] #S #[fg=$onedark_black, bg=$onedark_green]#[fg=$onedark_purple,bg=$onedark_black]#[fg=$onedark_black,bg=$onedark_purple,bold] #h "
 
 set "status-left" "#[fg=$onedark_black,bg=$onedark_purple,bold] #{?client_prefix,M ,N }#[fg=$onedark_purple,bg=$onedark_black,nobold,nounderscore,noitalics]"
 
