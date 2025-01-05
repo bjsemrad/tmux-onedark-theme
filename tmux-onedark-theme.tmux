@@ -83,9 +83,9 @@ status_widgets=$(get "@onedark_widgets")
 time_format=$(get "@onedark_time_format" "%R")
 date_format=$(get "@onedark_date_format" "%m/%d/%Y")
 
-set "status-right" "#[fg=$onedark_black,bg=$onedark_purple] | #[fg=$onedark_black, bg=$onedark_purple]I P |#[fg=$onedark_blue,bg=$onedark_purple,nobold,nounderscore,noitalics]|#[fg=$onedark_black,bg=$onedark_blue,bold] #h #[fg=$onedark_black,bg=$onedark_yellow]|#[fg=$onedark_black,bg=$onedark_yellow,bold]#S "
+set "status-right" "#[fg=$onedark_black,bg=$onedark_blue,bold] #h #[fg=$onedark_black,bg=$onedark_yellow,bold]#S "
 
-set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #{?client_prefix,#[bg=$onedark_blue] M #[default], N }"
+set "status-left" "#[fg=$onedark_black,bg=$onedark_green,bold] #{?client_prefix,#[bg=$onedark_blue] M, N }"
 
 set "window-status-format" "#[fg=$onedark_white,bg=$onedark_black] #I | #W "
-set "window-status-current-format" "[ #[fg=$onedark_white,bg=$onedark_visual_grey,nobold] #I | #W ]"
+set "window-status-current-format" "#[fg=$onedark_black,bg=$onedark_blue,bold] #I | #W"
